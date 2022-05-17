@@ -108,3 +108,19 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
       ''' bash
       ssh michael@192.168.1.110
       '''
+     -found flag inside of /var/www/html/ 
+     -screenshot here
+   -  flag3: flag3{afc01ab56b50591e7dccf93122770cd2}
+   - Foound exposed mysql credentials inside of /var/www/html/wordpress/wp-config.php
+    - mysql -u root -p
+    - select * from wp_users;
+    - screenshot
+    - Found flag after running
+      - select * from wp_posts;
+    - 
+    - _TODO: Include the command run_  
+    - flag4:715dea6c055b9fe3337544932f2941ce}
+   - Used google inspect element to find the flag hidden in the code
+    - _TODO: Identify the exploit used_
+    - _TODO: Include the command run_ 
+     
