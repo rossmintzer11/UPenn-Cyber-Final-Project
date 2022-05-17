@@ -38,11 +38,18 @@ _TODO: Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - `flag1.txt`: _TODO: Insert `flag1.txt` hash value_
-    - **Exploit Used**
+  -  flag1{b9bbcb33e11b80be759c4e844862482d} 
+    - Used google inspect element to find the flag hidden in the code
       - _TODO: Identify the exploit used_
       - _TODO: Include the command run_
-  - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
+  - `flag2.txt`: flag2{fc3fd58dcdad9ab23faca6e9a36e581c}
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - WPSCAN to Enumerate Use
+      - WPSCAN -url 192.168.1.110 --enumerate u
+      - found user Michael
+      -screenshot
+      - Used  basic Brute force to SSH into Michael's user
+      - Weak Password used (michael)
+      ''' bash
+      ssh michael@192.168.1.110
+      '''
