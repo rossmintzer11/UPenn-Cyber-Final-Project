@@ -113,14 +113,21 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
    -  flag3: flag3{afc01ab56b50591e7dccf93122770cd2}
    - Foound exposed mysql credentials inside of /var/www/html/wordpress/wp-config.php
     - mysql -u root -p
-    - select * from wp_users;
+    - Found user password hashes after running:
+      - select * from wp_users; 
     - screenshot
-    - Found flag after running
+    - cracked password hashes with john 
+    - screenshot
+    - Found flag3 after running
       - select * from wp_posts;
-    - 
-    - _TODO: Include the command run_  
+      - screenshot
+      -  
     - flag4:715dea6c055b9fe3337544932f2941ce}
-   - Used google inspect element to find the flag hidden in the code
-    - _TODO: Identify the exploit used_
-    - _TODO: Include the command run_ 
+   - logged into steven with password pink367 
+    - ran sudo -l to see stevens permissions
+    - screenshot
+    - We can run python as sudo so we can create shell as root with python
+    - https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#spawn-tty-shell
+    -sudo python -c 'import pty; pty.spawn("/bin/sh")'
+    - screen shot 
      
