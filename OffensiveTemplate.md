@@ -11,14 +11,17 @@ _TODO: Fill out the information below._
 Nmap scan results for each machine reveal the below services and OS details:
 
 ```bash
-$ nmap ... # TODO: Add command to Scan Target 1
+$ nmap -sC -sV 192.168.1.110
   # TODO: Insert scan output
 ```
 
 This scan identifies the services below as potential points of entry:
 - Target 1
-  - List of
-  - Exposed Services
+  - SSH on Port 22 verison 6.7p1
+  - HTTP Apache Server on Port 80  version 2.4.10  
+  - RPC on Port 111 
+  - SMBD on Port 139 version 3.x -4.x
+  - SMBD on Port 445 version 4.2.14
 
 _TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
 
