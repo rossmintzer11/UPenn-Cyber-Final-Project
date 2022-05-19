@@ -1,4 +1,4 @@
-### Network Analysis
+# Network Analysis
 
 ## Time Thieves
 
@@ -8,13 +8,13 @@ At least two users on the network have been wasting time on YouTube. Usually, IT
   -Their IP addresses are somewhere in the range 10.6.12.0/24.
   -You must inspect your traffic capture to answer the following questions:
 
-# What is the domain name of the users' custom site?
+### What is the domain name of the users' custom site?
  
-# What is the IP address of the Domain Controller (DC) of the AD network?
+### What is the IP address of the Domain Controller (DC) of the AD network?
  
-# What is the name of the malware downloaded to the 10.6.12.203 machine? Once you have found the file, export it to your Kali machine's desktop.
+### What is the name of the malware downloaded to the 10.6.12.203 machine? Once you have found the file, export it to your Kali machine's desktop.
  
-# Upload the file to VirusTotal.com. What kind of malware is this classified as?
+### Upload the file to VirusTotal.com. What kind of malware is this classified as?
  
  
  
@@ -25,16 +25,16 @@ Machines in the network live in the range 172.16.4.0/24.
   - The DC for this network lives at 172.16.4.4 and is named Mind-Hammer-DC.
   - The network has standard gateway and broadcast addresses.
   - Inspect your traffic to answer the following questions:
-# Find the following information about the infected Windows machine:
+### Find the following information about the infected Windows machine:
 Host name:
 IP address:
 MAC address:
 
-# What is the username of the Windows user whose computer is infected?
+### What is the username of the Windows user whose computer is infected?
  
-# What are the IP addresses used in the actual infection traffic?
+### What are the IP addresses used in the actual infection traffic?
  
-# As a bonus, retrieve the desktop background of the Windows host.
+## As a bonus, retrieve the desktop background of the Windows host.
 Illegal Downloads
 IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.
 IT shared the following about the torrent activity:
@@ -42,11 +42,11 @@ The machines using torrents live in the range 10.0.0.0/24 and are clients of an 
 The DC of this domain lives at 10.0.0.2 and is named DogOfTheYear-DC.
 The DC is associated with the domain dogoftheyear.net.
 
-# Your task is to isolate torrent traffic and answer the following questions:
+### Your task is to isolate torrent traffic and answer the following questions:
 
-# Find the following information about the machine with IP address 10.0.0.201:
+### Find the following information about the machine with IP address 10.0.0.201:
 MAC address
 Windows username
 OS version
 
-# Which torrent file did the user download?
+### Which torrent file did the user download?
