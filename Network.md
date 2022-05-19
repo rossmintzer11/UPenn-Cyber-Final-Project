@@ -7,7 +7,8 @@ At least two users on the network have been wasting time on YouTube. Usually, IT
    - They have set up an Active Directory network.
    - They are constantly watching videos on YouTube.
    - Their IP addresses are somewhere in the range 10.6.12.0/24.
-   - You must inspect your traffic capture to answer the following questions:
+
+##You must inspect your traffic capture to answer the following questions:
 
 ### What is the domain name of the users' custom site?
  
