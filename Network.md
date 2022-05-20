@@ -78,11 +78,13 @@ The DC is associated with the domain dogoftheyear.net.
 
 ### Find the following information about the machine with IP address 10.0.0.201:
 
-MAC address: Dell_f4:3b:96
+   #### - MAC address: Dell_f4:3b:96
 
-Windows username: elmer.blanco filter : ip.addr == 10.0.0.201 && kerberos.CNameString
+   #### - Windows username: elmer.blanco 
 
-![elmer blanco credentials]()
+   #### - Filter: `ip.addr == 10.0.0.201 && kerberos.CNameString`
+
+![elmer blanco credentials](Images/elmer-blanco.png)
 
 OS version: Windows 10 peep header of HTTP request from elmer
 
