@@ -101,18 +101,21 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
     - cracked password hashes with john 
  
- ![john](Images/john)
+ ![john](Images/john.png)
  
     - Found flag3 after running
      select * from wp_posts;
   
-  ![flag1-3](Images/flag31)
+  ![flag1-3](Images/flag31.png)
   
-      -  
-    - flag4:715dea6c055b9fe3337544932f2941ce}
+    
+   - flag4:715dea6c055b9fe3337544932f2941ce}
    - logged into steven with password pink367 
-    - ran sudo -l to see stevens permissions
-    - screenshot
+  
+   - ran sudo -l to see stevens permissions
+   
+   
+    
     - We can run python as sudo so we can create shell as root with python
     - https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#spawn-tty-shell
     -sudo python -c 'import pty; pty.spawn("/bin/sh")'
