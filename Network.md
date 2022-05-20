@@ -54,12 +54,15 @@ ip.src == 172.16.4.205 && kerberos.CNameString
  
 ### What are the IP addresses used in the actual infection traffic?
  
- 172.16.4.205, 185.243.115.84, and 166.62.11.64 are infected. 
+ 172.16.4.205, 185.243.115.84 are infected. 
  
  These adresses keep sending an empty.gif HTTP POST request. 
  
  
 ## As a bonus, retrieve the desktop background of the Windows host.
+
+/path/to/image
+
 Illegal Downloads
 IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.
 IT shared the following about the torrent activity:
@@ -70,8 +73,12 @@ The DC is associated with the domain dogoftheyear.net.
 ### Your task is to isolate torrent traffic and answer the following questions:
 
 ### Find the following information about the machine with IP address 10.0.0.201:
-MAC address
-Windows username
-OS version
+MAC address: Dell_f4:3b:96
+Windows username: elmer.blanco filter : ip.addr == 10.0.0.201 && kerberos.CNameString
+OS version: Windows 10 peep header of HTTP request from elmer
 
 ### Which torrent file did the user download?
+
+filter: ip.addr == 10.0.0.201 && http.request.method == GET
+
+Betty_Boop_Rhythm_on_the_Reservation.avi.torrent
