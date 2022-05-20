@@ -67,12 +67,16 @@ Machines in the network live in the range 172.16.4.0/24.
 
 ![Desktop Image](Images/desktop-background)
 
-Illegal Downloads
-IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.
+## Illegal Downloads
+
+### IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.
 IT shared the following about the torrent activity:
-The machines using torrents live in the range 10.0.0.0/24 and are clients of an AD domain.
-The DC of this domain lives at 10.0.0.2 and is named DogOfTheYear-DC.
-The DC is associated with the domain dogoftheyear.net.
+   
+   - The machines using torrents live in the range 10.0.0.0/24 and are clients of an AD domain.
+   
+   - The DC of this domain lives at 10.0.0.2 and is named DogOfTheYear-DC.
+   
+   - The DC is associated with the domain dogoftheyear.net.
 
 ### Your task is to isolate torrent traffic and answer the following questions:
 
