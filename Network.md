@@ -10,17 +10,17 @@ At least two users on the network have been wasting time on YouTube. Usually, IT
 
 ### You must inspect your traffic capture to answer the following questions:
 
- # What is the domain name of the users' custom site?
+ #### What is the domain name of the users' custom site?
 
  Filter: ip.src == 10.6.12.0/24 
  View>Resolve Network Host names 
  frank-n-ted.com
  
- What is the IP address of the Domain Controller (DC) of the AD network?
+ #### What is the IP address of the Domain Controller (DC) of the AD network?
 
    - frank-n-ted-dc.frank-n-ted.com @ 10.6.12.12
 
- What is the name of the malware downloaded to the 10.6.12.203 machine? Once you have found the file, export it to your Kali machine's desktop.
+ #### What is the name of the malware downloaded to the 10.6.12.203 machine? Once you have found the file, export it to your Kali machine's desktop.
 
    - june11.dll
    
@@ -31,7 +31,7 @@ At least two users on the network have been wasting time on YouTube. Usually, IT
 screenshot
 
  
- Upload the file to VirusTotal.com. What kind of malware is this classified as?
+ #### Upload the file to VirusTotal.com. What kind of malware is this classified as?
  
  It is classified as a Trojan
  
