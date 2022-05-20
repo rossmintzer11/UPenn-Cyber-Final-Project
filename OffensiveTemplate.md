@@ -6,7 +6,6 @@
 - Exploitation
 
 ### Exposed Services
-_TODO: Fill out the information below._
 
 Nmap scan results for each machine reveal the below services and OS details:
 
@@ -42,32 +41,6 @@ PORT    STATE SERVICE     VERSION
 MAC Address: 00:15:5D:00:04:10 (Microsoft)
 Service Info: Host: TARGET1; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
-Host script results:
-|_clock-skew: mean: -3h19m59s, deviation: 5h46m24s, median: 0s
-|_nbstat: NetBIOS name: TARGET1, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
-| smb-os-discovery: 
-|   OS: Windows 6.1 (Samba 4.2.14-Debian)
-|   Computer name: raven
-|   NetBIOS computer name: TARGET1\x00
-|   Domain name: local
-|   FQDN: raven.local
-|_  System time: 2022-05-18T04:25:02+10:00
-| smb-security-mode: 
-|   account_used: guest
-|   authentication_level: user
-|   challenge_response: supported
-|_  message_signing: disabled (dangerous, but default)
-| smb2-security-mode: 
-|   2.02: 
-|_    Message signing enabled but not required
-| smb2-time: 
-|   date: 2022-05-17T18:25:02
-|_  start_date: N/A
-
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 12.00 seconds
-root@Kali:~/Desktop# 
-
 ```
 
 This scan identifies the services below as potential points of entry:
@@ -80,11 +53,15 @@ This scan identifies the services below as potential points of entry:
 
 _TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
 
-The following vulnerabilities were identified on each target:
+The following vulnerabilities were identified on target 1:
 - Target 1
-  - List of
-  - Critical
-  - Vulnerabilities
+  - Weak Passwords
+    
+   - Easy to crack and guess  
+  
+  - Exposed MYSQL credentials inside of file
+  
+  - User is able to run Python as Root 
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
@@ -119,8 +96,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - cracked password hashes with john 
     - screenshot
     - Found flag3 after running
-      - select * from wp_posts;
-      - screenshot
+     - select * from wp_posts;
+     - screenshot
       -  
     - flag4:715dea6c055b9fe3337544932f2941ce}
    - logged into steven with password pink367 
@@ -162,8 +139,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - wget http://192.168.1.115/flag3 
 
   - priveledge escalation
-    - flag4{df2bc5e951d91581467bb9a2a8ff4425}
-           - signed into mysql 
+   - flag4{df2bc5e951d91581467bb9a2a8ff4425}
+    - signed into mysql with credentials from last activity
            - enumerated the mysql for version number
            - after running linenum and outside research I foudn the machine is vulnerable to udf dynamic library exploit 1518.c
                 - searchsploit –m 1518.c
