@@ -32,6 +32,7 @@ screenshot
  
  Upload the file to VirusTotal.com. What kind of malware is this classified as?
  
+ It is classified as a Trojan
  
  
 ## Vulnerable Windows Machines
@@ -42,13 +43,21 @@ Machines in the network live in the range 172.16.4.0/24.
   - The network has standard gateway and broadcast addresses.
   - Inspect your traffic to answer the following questions:
 ### Find the following information about the infected Windows machine:
-Host name:
-IP address:
-MAC address:
+Host name: rotterdam_PC.mind-hammer.net
+IP address: 172.16.4.205
+MAC address: LenovoEM_b0:63:a4
 
 ### What is the username of the Windows user whose computer is infected?
+
+matthijs.devries
+ip.src == 172.16.4.205 && kerberos.CNameString
  
 ### What are the IP addresses used in the actual infection traffic?
+ 
+ 172.16.4.205, 185.243.115.84, and 166.62.11.64 are infected. 
+ 
+ These adresses keep sending an empty.gif HTTP POST request. 
+ 
  
 ## As a bonus, retrieve the desktop background of the Windows host.
 Illegal Downloads
