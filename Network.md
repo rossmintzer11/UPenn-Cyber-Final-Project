@@ -73,8 +73,11 @@ The DC is associated with the domain dogoftheyear.net.
 ### Your task is to isolate torrent traffic and answer the following questions:
 
 ### Find the following information about the machine with IP address 10.0.0.201:
+
 MAC address: Dell_f4:3b:96
+
 Windows username: elmer.blanco filter : ip.addr == 10.0.0.201 && kerberos.CNameString
+
 OS version: Windows 10 peep header of HTTP request from elmer
 
 ### Which torrent file did the user download?
