@@ -26,7 +26,7 @@ At least two users on the network have been wasting time on YouTube. Usually, IT
    
    - ip.src == 10.6.12.203 && http.request.method == GET
  
- Export file: File > Export Object > HTTP
+   - Export file: File > Export Object > HTTP
 
 screenshot
 
@@ -34,6 +34,7 @@ screenshot
  #### Upload the file to VirusTotal.com. What kind of malware is this classified as?
  
  It is classified as a Trojan
+ 
  
  
 ## Vulnerable Windows Machines
