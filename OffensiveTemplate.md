@@ -96,13 +96,18 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - mysql -u root -p
     - Found user password hashes after running:
       - select * from wp_users; 
+      
 ![user password hashes](/Images/hashes.png)
 
     - cracked password hashes with john 
-    - screenshot
+ 
+ ![john](Images/john)
+ 
     - Found flag3 after running
-     - select * from wp_posts;
-     - screenshot
+     select * from wp_posts;
+  
+  ![flag1-3](Images/flag31)
+  
       -  
     - flag4:715dea6c055b9fe3337544932f2941ce}
    - logged into steven with password pink367 
