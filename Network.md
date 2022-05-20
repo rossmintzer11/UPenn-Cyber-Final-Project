@@ -86,7 +86,7 @@ Windows username: elmer.blanco filter : ip.addr == 10.0.0.201 && kerberos.CNameS
 
 OS version: Windows 10 peep header of HTTP request from elmer
 
-![OS Information]()
+![OS Information](Images/OS-info.png)
 
 
 
