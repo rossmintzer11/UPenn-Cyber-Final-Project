@@ -5,18 +5,20 @@
 At least two users on the network have been wasting time on YouTube. Usually, IT wouldn't pay much mind to this behavior, but it seems these people have created their own web server on the corporate network. So far, Security knows the following about these time thieves:
    
    - They have set up an Active Directory network.
+   
    - They are constantly watching videos on YouTube.
+   
    - Their IP addresses are somewhere in the range 10.6.12.0/24.
 
 ### You must inspect your traffic capture to answer the following questions:
 
  #### What is the domain name of the users' custom site?
 
- Filter: `ip.src == 10.6.12.0/24` 
+   - Filter: `ip.src == 10.6.12.0/24` 
 
-View>Resolve Network Host names 
+   - View>Resolve Network Host names 
 
-`frank-n-ted.com`
+   - `frank-n-ted.com`
  
  #### What is the IP address of the Domain Controller (DC) of the AD network?
 
