@@ -69,7 +69,7 @@ Machines in the network live in the range 172.16.4.0/24.
 
 ## Illegal Downloads
 
-### IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.
+IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.
 IT shared the following about the torrent activity:
    
    - The machines using torrents live in the range 10.0.0.0/24 and are clients of an AD domain.
