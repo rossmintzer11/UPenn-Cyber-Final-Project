@@ -70,12 +70,12 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 
 
   flag2.txt: flag2{fc3fd58dcdad9ab23faca6e9a36e581c}
+  
   I used WPSCAN to Enumerate user Michael and Steven 
+  
   Command:  `WPSCAN -url 192.168.1.110 --enumerate u`
   
- 
- 
-   ![wp-scan](/Images/WP-scan.png)
+  ![wp-scan](/Images/WP-scan.png)
    
    - Used  basic Brute force to SSH into Michael's user
    - Weak Password used (michael)
