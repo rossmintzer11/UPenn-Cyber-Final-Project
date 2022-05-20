@@ -35,7 +35,7 @@ screenshot
  
  It is classified as a Trojan
  
- ! [Virus Analysis](Images/Screen Shot 2022-05-19 at 9.07.17 PM.png)
+ ![Virus Analysis]()
  
 ## Vulnerable Windows Machines
 The Security team received reports of an infected Windows host on the network. They know the following:
