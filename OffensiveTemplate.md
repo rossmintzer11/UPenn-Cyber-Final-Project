@@ -90,7 +90,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     
    -  flag3: flag3{afc01ab56b50591e7dccf93122770cd2}
    - Foound exposed mysql credentials inside of /var/www/html/wordpress/wp-config.php
-![exposed sql server creds](sql creds.png)
+
+![exposed sql server creds](sqlcreds.png)
 
     - mysql -u root -p
     - Found user password hashes after running:
