@@ -51,8 +51,6 @@ This scan identifies the services below as potential points of entry:
   - SMBD on Port 139 version 3.x -4.x
   - SMBD on Port 445 version 4.2.14
 
-_TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
-
 The following vulnerabilities were identified on target 1:
 - Target 1
   - Weak Passwords
@@ -62,8 +60,6 @@ The following vulnerabilities were identified on target 1:
   - Exposed MYSQL credentials inside of file
   
   - User is able to run Python as Root 
-
-_TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
 ### Exploitation
 _TODO: Fill out the details below. Include screenshots where possible._
@@ -111,14 +107,32 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
      
     ## Target 2
     
-    Enumeration
+    ###Enumeration
     
     - nmap -sC -sV 192.168.1.115
     
     - nitko -C all -h 192.168.1.115 
    
-  - flag1{a2c1f66d2b8051bd3a5874b5b6e43e21}
-    - after enumerating directories found a vendor directory and found a flag inside ofthe PATH file
+  ## The following vulnerabilities were identified on target 2:
+
+   - Public facing web pages giving away system version and potential exploits
+    
+   - Easy to crack and guess  
+   
+   - Version is sensitive to backdoor exploit
+  
+  - Exposed MYSQL credentials inside of file
+  
+  - SQL is sensitive to UDF Dynamic Library Priveledge Escalation E-DB:1518 https://www.exploit-db.com/exploits/1518
+  
+  ### Exploitation
+  
+  #### flag1{a2c1f66d2b8051bd3a5874b5b6e43e21}
+    
+  First I enumerated directories with Gobuster 
+  
+  
+  Then I found a vendor directory and found a flag inside ofthe PATH file
   
   - flag2{6a8ed560f0b5358ecf844108048eb337}
     -found information on version
