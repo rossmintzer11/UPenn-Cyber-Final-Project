@@ -82,7 +82,11 @@ MAC address: Dell_f4:3b:96
 
 Windows username: elmer.blanco filter : ip.addr == 10.0.0.201 && kerberos.CNameString
 
+![elmer blanco credentials]()
+
 OS version: Windows 10 peep header of HTTP request from elmer
+
+![OS Information]()
 
 
 
