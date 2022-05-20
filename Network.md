@@ -12,23 +12,21 @@ At least two users on the network have been wasting time on YouTube. Usually, IT
 
  #### What is the domain name of the users' custom site?
 
- Filter: ip.src == 10.6.12.0/24 
+ Filter: `ip.src == 10.6.12.0/24` 
  View>Resolve Network Host names 
- frank-n-ted.com
+ `frank-n-ted.com`
  
  #### What is the IP address of the Domain Controller (DC) of the AD network?
 
-   - frank-n-ted-dc.frank-n-ted.com @ 10.6.12.12
+   - `frank-n-ted-dc.frank-n-ted.com @ 10.6.12.12`
 
  #### What is the name of the malware downloaded to the 10.6.12.203 machine? Once you have found the file, export it to your Kali machine's desktop.
 
-   - june11.dll
+   - `june11.dll`
    
-   - ip.src == 10.6.12.203 && http.request.method == GET
+   - Filter `ip.src == 10.6.12.203 && http.request.method == GET`
  
    - Export file: File > Export Object > HTTP
-
-screenshot
 
  
  #### Upload the file to VirusTotal.com. What kind of malware is this classified as?
@@ -52,7 +50,7 @@ Machines in the network live in the range 172.16.4.0/24.
 
 ### What is the username of the Windows user whose computer is infected?
 
-   - matthijs.devries
+   - UserName: matthijs.devries
 
    - filter: `ip.src == 172.16.4.205 && kerberos.CNameString`
  
@@ -72,17 +70,17 @@ Machines in the network live in the range 172.16.4.0/24.
 IT was informed that some users are torrenting on the network. The Security team does not forbid the use of torrents for legitimate purposes, such as downloading operating systems. However, they have a strict policy against copyright infringement.
 IT shared the following about the torrent activity:
    
-   - The machines using torrents live in the range 10.0.0.0/24 and are clients of an AD domain.
+   - The machines using torrents live in the range `10.0.0.0/24` and are clients of an AD domain.
    
-   - The DC of this domain lives at 10.0.0.2 and is named DogOfTheYear-DC.
+   - The DC of this domain lives at `10.0.0.2` and is named DogOfTheYear-DC.
    
    - The DC is associated with the domain dogoftheyear.net.
 
 ### Your task is to isolate torrent traffic and answer the following questions:
 
-### Find the following information about the machine with IP address 10.0.0.201:
+### Find the following information about the machine with IP address `10.0.0.201`:
 
-   #### - MAC address: Dell_f4:3b:96
+   #### - MAC address: `Dell_f4:3b:96`
 
    #### - Windows username: elmer.blanco 
 
@@ -98,6 +96,6 @@ OS version: Windows 10 peep header of HTTP request from elmer
 
 ### Which torrent file did the user download?
 
-filter: ip.addr == 10.0.0.201 && http.request.method == GET
+Filter: `ip.addr == 10.0.0.201 && http.request.method == GET`
 
 Betty_Boop_Rhythm_on_the_Reservation.avi.torrent
