@@ -13,8 +13,10 @@ At least two users on the network have been wasting time on YouTube. Usually, IT
  #### What is the domain name of the users' custom site?
 
  Filter: `ip.src == 10.6.12.0/24` 
- View>Resolve Network Host names 
- `frank-n-ted.com`
+
+View>Resolve Network Host names 
+
+`frank-n-ted.com`
  
  #### What is the IP address of the Domain Controller (DC) of the AD network?
 
