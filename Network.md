@@ -22,9 +22,9 @@ At least two users on the network have been wasting time on YouTube. Usually, IT
 
  What is the name of the malware downloaded to the 10.6.12.203 machine? Once you have found the file, export it to your Kali machine's desktop.
 
-   -june11.dll
-
-ip.src == 10.6.12.203 && http.request.method == GET
+   - june11.dll
+   - 
+   - ip.src == 10.6.12.203 && http.request.method == GET
  
  Export file: File > Export Object > HTTP
 
