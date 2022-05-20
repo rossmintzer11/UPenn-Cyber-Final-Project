@@ -79,17 +79,24 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
    
    - Used  basic Brute force to SSH into Michael's user
    - Weak Password used (michael)
-      ` bash
+      
+     Command:  `
       ssh michael@192.168.1.110
       `
-     -found flag inside of `/var/www/html/ `
-     -screenshot here
+      
+    -found flag inside of `/var/www/html/ `
+    -screenshot here
+    
+    
    -  flag3: flag3{afc01ab56b50591e7dccf93122770cd2}
    - Foound exposed mysql credentials inside of /var/www/html/wordpress/wp-config.php
+![exposed sql server creds](sql creds.png)
+
     - mysql -u root -p
     - Found user password hashes after running:
       - select * from wp_users; 
-    - screenshot
+![user password hashes]()
+
     - cracked password hashes with john 
     - screenshot
     - Found flag3 after running
