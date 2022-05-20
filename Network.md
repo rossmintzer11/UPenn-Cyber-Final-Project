@@ -58,7 +58,7 @@ Machines in the network live in the range 172.16.4.0/24.
  
 ### What are the IP addresses used in the actual infection traffic?
  
- 172.16.4.205, 185.243.115.84 are infected. 
+ `172.16.4.205` , `185.243.115.84` are infected. 
  
  These adresses keep sending an empty.gif HTTP POST request. 
  
@@ -83,6 +83,8 @@ MAC address: Dell_f4:3b:96
 Windows username: elmer.blanco filter : ip.addr == 10.0.0.201 && kerberos.CNameString
 
 OS version: Windows 10 peep header of HTTP request from elmer
+
+
 
 ### Which torrent file did the user download?
 
