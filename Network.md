@@ -35,7 +35,7 @@ screenshot
  
  It is classified as a Trojan
  
- ![Virus Analysis]()
+ ![Virus Analysis](/Images/VirusTotal.png)
  
 ## Vulnerable Windows Machines
 The Security team received reports of an infected Windows host on the network. They know the following:
