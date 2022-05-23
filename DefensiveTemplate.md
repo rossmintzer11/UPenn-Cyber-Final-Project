@@ -11,7 +11,7 @@
 _TODO: Fill out the information below._
 
 The following machines were identified on the network:
-- Name of VM 1
+- Capstone
   - **Operating System**:
   - **Purpose**:
   - **IP Address**:
@@ -19,7 +19,18 @@ The following machines were identified on the network:
   - **Operating System**:
   - **Purpose**:
   - **IP Address**:
-- Etc.
+- Name of VM 2
+  - **Operating System**:
+  - **Purpose**:
+  - **IP Address**:
+- Name of VM 2
+  - **Operating System**:
+  - **Purpose**:
+  - **IP Address**:
+- Name of VM 2
+  - **Operating System**:
+  - **Purpose**:
+  - **IP Address**:
 
 ### Description of Targets
 _TODO: Answer the questions below._
