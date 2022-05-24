@@ -9,7 +9,7 @@
 
 ### Network Topology
 
-![network diagram](/Images/diagram)
+![network diagram](/Images/diagram.png)
 
 The following machines were identified on the network:
 - Capstone
