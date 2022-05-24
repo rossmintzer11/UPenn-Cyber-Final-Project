@@ -91,7 +91,7 @@ Target 2:
 - Outdated PHPmailer Version exploitable by backdoor exploit 
   - **Patch**: Update PHPmailer version and monitor alerts for malicouse activity 
   - **Why It Works**: Updates address known CVEs and  nulifys the exploit
-- Excessive open source information on version and exploits on wb pages
+- Excessive open source information on version and exploits on web pages
   - **Patch**: move file off web server and update file permissions
   - **Why It Works**: makes it harder for a hacker to enumerate the machine
 -  User Defined Dynamic Library Privilidge Escalation using exploit E-DB:1518 https://www.exploit-db.com/exploits/1518
