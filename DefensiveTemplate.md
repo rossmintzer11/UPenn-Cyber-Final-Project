@@ -8,7 +8,8 @@
 - Suggestions for Going Further
 
 ### Network Topology
-_TODO: Fill out the information below._
+
+!(network diagram)[/Images/diagram] 
 
 The following machines were identified on the network:
 - Capstone
