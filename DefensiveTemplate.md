@@ -58,6 +58,8 @@ Alert 2 is implemented as follows:
   - **Vulnerability Mitigated**: Hacker running reverse shells, scripts, and malware on the machine. 
   - **Reliability**: Medium. Can generate alerts from normal activity but is still good to have these alerts since they will likely triggered along with normal syetm processes that are resource intensive. Most likely can be 
 
+![cpu usage in action)(Images/kabana1.png)
+
 #### HTTP Request Size Monitor
 Alert 3 is implemented as follows:
   - **Metric**: Http request size in Bytes
