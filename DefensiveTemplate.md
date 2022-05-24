@@ -88,7 +88,7 @@ Target 2:
   - **Why It Works**: Updates address known CVEs and  nulifys the exploit
 - Excessive open source information on version and exploits on wb pages
   - **Patch**: move file off web server and update file permissions
-  - **Why It Works**: makes it harderr for a hacker to enumerate the machine
--  UDF Dynamic Library Priveledge Escalation sensitive to exploit E-DB:1518 https://www.exploit-db.com/exploits/151
-  - **Patch**:  UDF Dynamic Library Priveledge Escalation E-DB:1518 https://www.exploit-db.com/exploits/151
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
+  - **Why It Works**: makes it harder for a hacker to enumerate the machine
+-  User Defined Dynamic Library Priveledge Escalation using exploit E-DB:1518 https://www.exploit-db.com/exploits/1518
+  - **Patch**:  Mysql is outdated and needs to be updated to the latest version
+  - **Why It Works**: The update patches MySQL to prevent the exploit from working
