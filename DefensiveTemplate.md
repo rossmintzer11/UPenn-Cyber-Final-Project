@@ -50,7 +50,9 @@ Alert 1 is implemented as follows:
   - **Threshold**: 1000 errors last 5 mins
   - **Vulnerability Mitigated**: Bruteforcing Logins and Directories
   - **Reliability**: High. Generally normal users aren'tcreating 400 errors on webpages a 1000 times a minute. A broken Crawler could potentially do this   in the wild. 
-
+  
+![excessive http errors](/Images/kabana3)  
+  
 #### CPU Usage Monitor
 Alert 2 is implemented as follows:
   - **Metric**: CPU usage percentage
@@ -58,7 +60,7 @@ Alert 2 is implemented as follows:
   - **Vulnerability Mitigated**: Hacker running reverse shells, scripts, and malware on the machine. 
   - **Reliability**: Medium. Can generate alerts from normal activity but is still good to have these alerts since they will likely triggered along with normal syetm processes that are resource intensive. Most likely can be 
 
-![cpu usage in action)(Images/kabana1.png)
+![cpu usage in action](Images/kabana1.png)
 
 #### HTTP Request Size Monitor
 Alert 3 is implemented as follows:
@@ -67,7 +69,7 @@ Alert 3 is implemented as follows:
   - **Vulnerability Mitigated**: Identify Cross Site Scripting acitvity, DDOS attacks, and Buffer Overflow. 
   - **Reliability**: Low Reliability. Normal traffic such as downnloading a normal file can trigger this alert. Still beneficial to have since it can help identify malicouse traffic when there are other indicators oif compromise occuring simultaneously. 
 
-_TODO Note: Explain at least 3 alerts. Add more if time allows._
+![http request size)[Images/kabana2.png]
 
 ### Going Further 
 - Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.
