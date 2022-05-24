@@ -148,6 +148,8 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   
   Then I found a vendor directory and found a flag inside ofthe PATH file
  
+ ### flag2{6a8ed560f0b5358ecf844108048eb337}
+ 
 - found information on version
 - screenshot 
 - found information on cves 
@@ -158,7 +160,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - screenshot 
   - -traversed directories and found flag2
     
-### flag 3 flag3{a0f568aa9de277887f37730d71520d9b}
+### `flag 3 flag3{a0f568aa9de277887f37730d71520d9b}`
   -find /var/www -type f -iname 'flag*'
   -this leads us to a png file 
   - we setup a simple http server insid the directory of the flagto download to the file to my attacking machine
@@ -166,7 +168,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - wget http://192.168.1.115/flag3 
 
  ### Priviledge Escalation
-   - `flag4{df2bc5e951d91581467bb9a2a8ff4425}`
+ ### `flag4{df2bc5e951d91581467bb9a2a8ff4425}`
    - `signed into mysql with credentials from last activity`
    - `enumerated the mysql for version number`
    - after running linenum and outside research I foudn the machine is vulnerable to udf dynamic library exploit 1518.c
