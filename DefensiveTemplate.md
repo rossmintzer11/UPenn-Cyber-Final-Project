@@ -90,5 +90,5 @@ Target 2:
   - **Patch**: move file off web server and update file permissions
   - **Why It Works**: makes it harder for a hacker to enumerate the machine
 -  User Defined Dynamic Library Priveledge Escalation using exploit E-DB:1518 https://www.exploit-db.com/exploits/1518
-  -  **Patch**:  Mysql is outdated and needs to be updated to the latest version
-  -  **Why It Works**: The update patches MySQL to prevent the exploit from working
+    -  **Patch**:  Mysql is outdated and needs to be updated to the latest version
+    -  **Why It Works**: The update patches MySQL to prevent the exploit from working
