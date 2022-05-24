@@ -76,8 +76,8 @@ Target 1:
   - **Patch**: Set Minimum password requirements, set password reset intervals, and timeout between attempts or lockout after certain number of attempts.
   - **Why It Works**: Makes it longer and harder for password cracking and brute forcing software to guess passwords. 
 - Access control problems for files containing sensitive information 
-  - **Patch**: Change file permisions so www user doesn't have any permission to view documents with sensitive info 
-  - **Why It Works**: Prevents web pages viewers to have open source information on how to hack the company 
+  - **Patch**: Change file permisions so only admins can view documents with sensitive info 
+  - **Why It Works**: Prevents low level users from having access to files containing sensitve info 
 - Privilidge Escalation: www user can run python as root without password
   - **Patch**: 2 options: first option take away the ability to run python as root user. Second option if python run as root isn't optional then require a password to use sudo. 
   - **Why It Works**: Mitigates the ability to run python as root fromm www user. Anyone trying to brute force the password of www user will be reported into the system logs. 
