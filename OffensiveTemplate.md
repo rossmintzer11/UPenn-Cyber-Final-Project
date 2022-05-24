@@ -119,13 +119,13 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
    - screen shot
      
      
-    ## Target 2
+  ## Target 2
+  
+  ### Enumeration
     
-    ###Enumeration
+    - `nmap -sC -sV 192.168.1.115`
     
-    - nmap -sC -sV 192.168.1.115
-    
-    - nitko -C all -h 192.168.1.115 
+    - `nitko -C all -h 192.168.1.115` 
    
   ## The following vulnerabilities were identified on target 2:
 
