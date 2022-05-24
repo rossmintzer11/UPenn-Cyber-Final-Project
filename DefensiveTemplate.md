@@ -76,20 +76,19 @@ Target 1:
   - **Patch**: Set Minimum password requirements, set password reset intervals, and timeout between attempts or lockout after certain number of attempts.
   - **Why It Works**: Makes it longer and harder for password cracking and brute forcing software to guess passwords. 
 - Access control problems for files containing sensitive information 
-  - **Patch**: CXhange file permisions so www can't view 
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
-- Vulnerability 3
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
-
+  - **Patch**: Change file permisions so www user doesn't have any permission to view documents with sensitive info 
+  - **Why It Works**: Prevents web pages viewers to have open source information on how to hack the company 
+- Priveledge Escalation: www user can run python as root without password
+  - **Patch**: 2 options: first option take away the ability to run python as root user. Second option if python run as root isn't optional then require a password to use sudo. 
+  - **Why It Works**: Mitigates the ability to run python as root fromm www user. Anyone trying to brute force the password of www user will be reported into the system logs. 
 
 Target 2:
-- Weak Passwords and Brute Forcing 
-  - **Patch**: Set Minimum password requirements, set password reset intervals, and timeout between attempts or lockout after certain number of attempts.
-  - **Why It Works**: Makes it longer and harder for password cracking and brute forcing software to guess passwords. 
-- Access control problems for files containing sensitive information 
-  - **Patch**: CXhange file permisions so www can't view 
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
-- Vulnerability 3
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
+- Outdated PHPmailer Version exploitable by backdoor exploit 
+  - **Patch**: Update PHPmailer version and monitor alerts for malicouse activity 
+  - **Why It Works**: Updates address known CVEs and  nulifys the exploit
+- Excessive open source information on version and exploits on wb pages
+  - **Patch**: move file off web server and update file permissions
+  - **Why It Works**: makes it harderr for a hacker to enumerate the machine
+-  UDF Dynamic Library Priveledge Escalation sensitive to exploit E-DB:1518 https://www.exploit-db.com/exploits/151
+  - **Patch**:  UDF Dynamic Library Priveledge Escalation E-DB:1518 https://www.exploit-db.com/exploits/151
   - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
